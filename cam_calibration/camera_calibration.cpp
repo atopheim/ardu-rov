@@ -91,6 +91,7 @@ public:
 
         if (input.empty())      // Check for valid input
                 inputType = INVALID;
+                cout<< "Empty input">>;
         else
         {
             if (input[0] >= '0' && input[0] <= '9')

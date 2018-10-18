@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-filename = "Professional/Sealab/all_data/images/train_wound/normal_20180416_151150_008429.jpg"
+filename = "dataset/salmon.jpg"
 img = cv2.imread(filename)
 cv2.imshow(img)
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)

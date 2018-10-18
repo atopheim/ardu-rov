@@ -30,6 +30,12 @@ kernel5 = np.matrix("1 1 2 1 1; \
 dst5 = cv2.filter2D(img, -1, kernel5)
 dst3 = cv2.filter2D(img, -1, kernel3)
 
+# Median blur
+median = cv2.medianBlur(img,5)
+
+# Bilateral Filtering
+blur = cv2.bilateralFilter(img,9,75,75)
+
 gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 sobel_kernel = 3
 sobelx = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=sobel_kernel )
